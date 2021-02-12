@@ -1,0 +1,23 @@
+{
+  "name": "resolucao-de-problema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "soma.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wevertonvetim/resolucao-de-problema.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wevertonvetim/resolucao-de-problema/issues"
+  },
+  "homepage": "https://github.com/wevertonvetim/resolucao-de-problema#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
