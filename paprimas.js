@@ -1,4 +1,4 @@
-let palavra = 'AcM'//'contest'//'UFRN' // 'AcM'
+let palavra = 'aa'//'contest'//'UFRN' // 'AcM'
 let soma=0;
 for (let i = 0;i<=(palavra.length-1);i++){
     switch(palavra[i]){
@@ -164,41 +164,35 @@ for (let i = 0;i<=(palavra.length-1);i++){
     }
 }
 
-let num = soma;
+let NumeroAnalizado = soma;
 let i = 1;
 let j = 0;
-function triagem(num){
-    if(num==2){
+function DoisOuPar(NumeroAnalizado){ //verifica se o numero é dois ou par.
+    if(NumeroAnalizado==2){
     return true;
-    }else if ((num%2)==0) {
+    }else if ((NumeroAnalizado%2)==0) {
     return false;
     }else{
-    return num;
+    return NumeroAnalizado;
     }
 }
-if (triagem(num)==num){
-    while(i<=num && j!=3){
-         if((num%i)==0){
-            j++;
+if (DoisOuPar(NumeroAnalizado)==NumeroAnalizado){
+    let i = 1;
+    let TotalDeDivisor = 0;
+    while(i<=(NumeroAnalizado/2)){
+         if((NumeroAnalizado%i)==0){
+            TotalDeDivisor++;
             i++;
          }else {
             i++;
          }
         }
-    if(j==3){
-        num=false;  
+    if(TotalDeDivisor>=3){
+        NumeroAnalizado=false;  
     }else{
-        num=true;
+        NumeroAnalizado=true;
     }
-    if(num){
-        console.log('É uma palavra prima');
-    }else{
-        console.log('Não é uma palavra prima');
-    }
+    console.log(NumeroAnalizado);
 }else{
-    if(triagem(num)){
-        console.log('É uma palavra prima');
-    }else{
-        console.log('Não é uma palavra prima');
-    }
+    console.log(DoisOuPar(NumeroAnalizado));
 }

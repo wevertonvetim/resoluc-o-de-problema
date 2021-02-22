@@ -1,30 +1,33 @@
-let num = 10007;
-let i = 1;
-let j = 0;
-function triagem(num){
-    if(num==2){
+// Verifico se o numero é 2 ou se ele é par
+// Verifico quantas vezes ele pode ser divido sem deixar resto.
+
+let NumeroAnalizado = 10007;
+function DoisOuPar(NumeroAnalizado){ //verifica se o numero é dois ou par.
+    if(NumeroAnalizado==2){
     return true;
-    }else if ((num%2)==0) {
+    }else if ((NumeroAnalizado%2)==0) {
     return false;
     }else{
-    return num;
+    return NumeroAnalizado;
     }
 }
-if (triagem(num)==num){
-    while(i<=num && j!=3){
-         if((num%i)==0){
-            j++;
+if (DoisOuPar(NumeroAnalizado)==NumeroAnalizado){
+    let i = 1;
+    let TotalDeDivisor = 0;
+    while(i<=(NumeroAnalizado/2)){
+         if((NumeroAnalizado%i)==0){
+            TotalDeDivisor++;
             i++;
          }else {
             i++;
          }
         }
-    if(j==3){
-        num=false;  
+    if(TotalDeDivisor>=3){
+        NumeroAnalizado=false;  
     }else{
-        num=true;
+        NumeroAnalizado=true;
     }
-    console.log(num);
+    console.log(NumeroAnalizado);
 }else{
-    console.log(triagem(num));
+    console.log(DoisOuPar(NumeroAnalizado));
 }
