@@ -1,33 +1,18 @@
 // Verifico se o numero é 2 ou se ele é par
 // Verifico quantas vezes ele pode ser divido sem deixar resto.
 
-let NumeroAnalizado = 10007;
-function DoisOuPar(NumeroAnalizado){ //verifica se o numero é dois ou par.
-    if(NumeroAnalizado==2){
-    return true;
-    }else if ((NumeroAnalizado%2)==0) {
-    return false;
-    }else{
-    return NumeroAnalizado;
+function ePrimo(palavraconvertida){
+    if(palavraconvertida%2==0 && palavraconvertida > 2){
+        return false;
     }
-}
-if (DoisOuPar(NumeroAnalizado)==NumeroAnalizado){
-    let i = 1;
-    let TotalDeDivisor = 0;
-    while(i<=(NumeroAnalizado/2)){
-         if((NumeroAnalizado%i)==0){
-            TotalDeDivisor++;
-            i++;
-         }else {
-            i++;
-         }
+    else{
+        for(let i=2;i<=palavraconvertida/2;i++){
+            if (palavraconvertida%i==0){
+                return false;
+            }
         }
-    if(TotalDeDivisor>=3){
-        NumeroAnalizado=false;  
-    }else{
-        NumeroAnalizado=true;
+        return true;
     }
-    console.log(NumeroAnalizado);
-}else{
-    console.log(DoisOuPar(NumeroAnalizado));
 }
+
+console.log(ePrimo(21));

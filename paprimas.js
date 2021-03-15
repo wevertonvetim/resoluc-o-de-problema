@@ -16,7 +16,7 @@ function ePrimo(palavraconvertida){
     }
     else{
         for(let i=2;i<=palavraconvertida/2;i++){
-            if (palavraconvertida[i]%2==0){
+            if (palavraconvertida%i==0){
                 return false;
             }
         }
