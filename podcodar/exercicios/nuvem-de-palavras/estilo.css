@@ -1,0 +1,24 @@
+.principal{
+    width:900px;
+    height:700px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.principal__titulo{
+    color:rgb(55, 10, 218);
+}
+.principal__nuvem{
+    width:600px;
+    height:600px;
+    background-color: blue;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.palavras{
+    font-size: 8px;
+    color:rgb(10,10,10)
+}

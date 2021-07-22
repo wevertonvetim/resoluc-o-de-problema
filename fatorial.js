@@ -10,4 +10,4 @@ function fatorial(num){
         return num*fatorial(num-1);
     }
 }
-console.log(fatorial(24));
+console.log(fatorial(7));

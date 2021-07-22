@@ -2,7 +2,7 @@
 //excluo do vetor
 //exibo o tamanho do vetor que sobrou
 
-const mDNA=['AAAA','BBBBB','AAAA','BBB','CCCC','CCCC','AAA'];
+const mDNA=['AAAA','BBB','AAAA','BBB','BBBB','CCCC','CCCC','AAA'];
 
 function comparaTamanho(especie1, especie2){
     if((especie1.length)==(especie2.length)){
