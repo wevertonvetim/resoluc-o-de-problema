@@ -9,14 +9,12 @@ const testCase=['aaabcdefghijklmnopqrstuvwxyz','abcdefghijklmnopqrstvwxyz']
 let map = {};
 const verificarAlfabeto = (string)=>{
     let alfabeto = false;
-    let cont = 0;
     for (let i = 0;i<string.length;i++){
         if(map[string[i]]===undefined){
             map[string[i]]=1;
-            cont++;
         }
     }
-    if(cont==26){
+    if(Object.keys(map).length==26){
         alfabeto=true;
         map = {};
     }

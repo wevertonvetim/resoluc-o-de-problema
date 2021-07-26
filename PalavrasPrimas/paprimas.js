@@ -1,4 +1,4 @@
-//identificar os valres de cada letra
+//identificar os valoes de cada letra
 //somar o valor da palavar
 //verificar se é primo ou nao
     
