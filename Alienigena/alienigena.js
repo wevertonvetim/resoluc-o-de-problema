@@ -34,7 +34,6 @@ function ehIgual(especie1,especie2){
     return true;   
 }
 
-
 function ComparaAsEspecies(especie1,especie2){
     if(comparaTamanho(especie1,especie2) && ehIgual(especie1,especie2)){
         return true

@@ -1,4 +1,4 @@
-let s = 1234;
+let s = "12345";
 function reverseString(s) {
     try {
         s = s.split("").reverse().join("");
